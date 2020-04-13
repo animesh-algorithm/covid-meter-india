@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container text-center text-white">
+        <h1 class="orbitron">Coronameter<sub class='lead'><img src="https://img.icons8.com/doodle/48/000000/india.png" style="width:40px"></sub></h1>
+        <p class="lead">Last Updated <span class='orbitron' id='last-updated'></span></p>
+
+        <div class="container mt-5 row">
+            <div class="container col">
+                <h2 class="orbitron">Total Confirmed:</h2>
+                <h2 class="lead font-weight-bold orbitron" id="total-confirmed"></h2>
+            </div>
+            <div class="container col">
+                <h2 class="orbitron">Total Active:</h2>
+                <h2 class="lead font-weight-bold" id="total-active"></h2>
+            </div>
+            <div class="container col">
+                <h2 class="orbitron">Total Deaths:</h2>
+                <h2 class="lead font-weight-bold" id="total-deaths"></h2>
+            </div>
+            <div class="container col">
+                <h2 class="orbitron">Total Recovered:</h2>
+                <h2 class="lead font-weight-bold" id="total-recovered"></h2>
+            </div>
+        </div>
+
+        <table class="table mt-5 text-white">
+            <thead class='bg-dark'>
+                <tr>
+                    <th class="orbitron" scope="col">State</th>
+                    <th class="orbitron" scope="col">Confirmed</th>
+                    <th class="orbitron" scope="col">Active</th>
+                    <th class="orbitron" scope="col">Deaths</th>
+                    <th class="orbitron" scope="col">Recovered</th>
+                    <th class="orbitron" scope="col">Last Updated</th>
+                </tr>
+            </thead>
+
+            <tbody id="state-wise-data">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
